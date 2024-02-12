@@ -1,0 +1,2 @@
+selenium
+browser driver : https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.14.0/IEDriverServer_x64_4.14.0.zip
