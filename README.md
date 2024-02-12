@@ -1,1 +1,1 @@
-Date converting from verbal description to an actual date in Python
+routine automation including date description converting and automating form filling
