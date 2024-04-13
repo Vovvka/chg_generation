@@ -6,9 +6,10 @@ https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
 
 Script is using python library pytz for time zone calculations, we have timezone_mapping variable where we specify custom time zones which are not in standartized format: 
 
-timezone_mapping = {
-    'custom zone from our sheet': 'time zone from pytz zones list which can be found in pytz_timezones', 
-}
+    timezone_mapping = {
+        
+        'custom zone from our sheet': 'time zone from pytz zones list which can be found in pytz_timezones', 
+    }
 
 We choose to convert from the respective time zones to our main time zone *Europe/London* which is default in snow for our accounts.
 
