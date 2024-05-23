@@ -38,6 +38,6 @@ Script is printing in console every row from the range you specify from the star
 
 Usual error for this step is misspelling of Start Description in excel sheet, or new time zone which we didn't already specify in our zone names collection.
 
-In this current version we specify the paths to excel file under variable **links_file_path =  = 'C:/linkspath.txt'** inside txt file and then read it and use line 0 as the file where we choose the range of rows and the same file will be updated, **remember to close the sheet before running the script**.
+In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 0 as the file where we choose the range of rows and the same file will be updated, **remember to close the sheet before running the script**.
 
 There can be an error because of opened excel sheet which denies rewriting on top of it and needs to be closed for the scipt to update the file.
