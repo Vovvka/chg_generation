@@ -52,8 +52,8 @@ We convert from the respective time zones to our main time zone, *Europe/London*
    - Or install it using **Pip manager** by pressing the plus icon and using the name.
 
 2. **Set Up Your Files:**
-   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first and third lines.
-   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and line 3 with Scheduled tasks file, remember to close the second sheet before running the script!!!
+   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first line.
+   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and also update the same file, remember to close the sheet before running the script!!!
 
 3. **Set Up Your current CMS Schedule sheet name:**
    - Input the correct name of this month sheet name like: 
@@ -62,7 +62,7 @@ We convert from the respective time zones to our main time zone, *Europe/London*
     workbook_name = 'May2024'
     ```
 
-Usual error for this step is misspelling of Start Description in excel sheet, or new time zone which we didn't already specify in our zone names collection.
+Usual error before this step is misspelling of Start Description in excel sheet, or new time zone which we didn't already specify in our zone names collection.
 
 
 4. **Execute the Script:**
