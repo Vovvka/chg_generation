@@ -50,6 +50,11 @@ This guide will help you use the provided Python script to fill SFD table with C
 6. **Printing on execution**
    - Scipt do not print anything in case of success
 
-7. **Errors during the script execution**
+7. **Copying to the sharepoint excels:**
+
+   - Press CTRL + A and CTRL + C inside updated sheet
+   - Press CTRL + A and paste with ctrl+shift+v into needed excel
+
+8. **Errors during the script execution**
    - There might be None under CR number because of blank cell in CMS schedule.
    - There can be an error because of opened Calendar excel sheet which denies rewriting on top of it and needs to be closed for the scipt to update the file.

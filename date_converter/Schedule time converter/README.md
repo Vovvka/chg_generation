@@ -92,7 +92,12 @@ Script is printing in console every row from the range you specify from the star
 > Start Date : 2024-03-18 01:00:00 <br>
 > End Date: 2024-03-18 05:00:00 <br>
 
-7. **Common Errors**
+7. **Copying to the sharepoint excels:**
+
+   - Press CTRL + A and CTRL + C inside updated sheet
+   - Press CTRL + A and paste with ctrl+shift+v into needed excel
+
+8. **Common Errors**
 
    - Misspelled Start Description: Ensure the start description in the Excel sheet is spelled correctly.
    - New Time Zone: Add any new time zones to the `timezone_mapping` dictionary.
