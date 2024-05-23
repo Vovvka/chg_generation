@@ -2,7 +2,9 @@
 ------------------------
 
 Easiest way for running this is by Visual Studio code Jupyter extension or using Jupyter notebook google chrome application which you can save as additional app on your pc
-https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter <br>
+or <br>
+https://jupyter.org/try-jupyter/lab/
 
 Script is using python library pytz for time zone calculations, we have timezone_mapping variable where we specify custom time zones which are not in standartized format: 
 
