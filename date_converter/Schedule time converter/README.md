@@ -94,7 +94,7 @@ Script is printing in console every row from the range you specify from the star
 
 7. **Common Errors**
 
-  - **Misspelled Start Description:** Ensure the start description in the Excel sheet is spelled correctly.
-  - **New Time Zone:** Add any new time zones to the `timezone_mapping` dictionary.
-  - **Opened Excel Sheet:** Close the Excel sheet before running the script to allow the script to update the file.
+   - Misspelled Start Description: Ensure the start description in the Excel sheet is spelled correctly.
+   - New Time Zone: Add any new time zones to the `timezone_mapping` dictionary.
+   - Opened Excel Sheet: Close the Excel sheet before running the script to allow the script to update the file.
 
