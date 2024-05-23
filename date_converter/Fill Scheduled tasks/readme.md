@@ -18,11 +18,15 @@ This guide will help you use the provided Python script to fill scheduled tasks 
 1. **Prepare the Environment:**
    - Script is using python library pytz for time zone calculation, we specify it under start_timezone and tasks_timezone variables.
    - Ensure you have Python installed on your system.
-   - Install the required Python packages:
-     ```sh
-     pip install openpyxl pytz
-     ```
-     - Or install it using **Pip manager** pressing on plus icon and using the name 'pytz'
+   - Ensure you have the following Python libraries installed:
+    - `pytz`
+    - `openpyxl`
+    - `dateutil`
+   - You can install them using pip:
+    ```sh
+    pip install pytz openpyxl python-dateutil
+    ```
+   - Or install it using **Pip manager** by pressing the plus icon and using the name.
 
 2. **Set Up Your Files:**
    - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first and third lines.
