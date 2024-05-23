@@ -57,8 +57,8 @@ This guide will help you use the provided Python script to fill scheduled tasks 
 
 6. **Printing on execution**
    - Script prints every collections it found.
-    > None - AWS19 Web Services UAT Updated
-    > CHG12912112 - AWS19 Web Services UAT Updated
+    > None - AWS19 Web Services UAT Updated <br>
+    > CHG12912112 - AWS19 Web Services UAT Updated <br>
 
 7. **Errors during the script execution**
    - There might be None under CR number because of blank cell in CMS schedule.
