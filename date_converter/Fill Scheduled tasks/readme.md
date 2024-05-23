@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Fill Scheduled Tasks Table with CR Numbers and Dates
 
 This guide will help you use the provided Python script to fill scheduled tasks tables with CR numbers and dates. The easiest way to run this script is by using the Visual Studio Code Jupyter extension or the Jupyter notebook application for Google Chrome.
@@ -38,8 +25,8 @@ This guide will help you use the provided Python script to fill scheduled tasks 
      - Or install it using **Pip manager** pressing on plus icon and using the name 'pytz'
 
 2. **Set Up Your Files:**
-   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first line.
-   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 0 as the file where we choose the range of rows and the same file will be updated, remember to close the sheet before running the script!!!
+   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first and third lines.
+   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and line 3 with Scheduled tasks file, remember to close the second sheet before running the script!!!
 
 3. **Set Up Your current CMS Schedule sheet name:**
    - Input the correct name of this month sheet name like: 
