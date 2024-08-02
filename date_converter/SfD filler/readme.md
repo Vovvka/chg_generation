@@ -31,6 +31,13 @@ This guide will help you use the provided Python script to fill SFD table with C
 
 2. **Set Up Your Files:**
    - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first and third lines.
+   it should look like this inside your file:
+      ```
+      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\CMS Software Updates Patching Schedule.xlsx
+      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\UMG - Syxsense Patch Calendar v380.xlsx
+      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Scheduled Tasks.xlsx
+      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Delivery list.xlsx
+      ```
    - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and line 2 with Calendar file, remember to close the second sheet before running the script!!!
 
 3. **Set Up Your current CMS Schedule sheet name:**
