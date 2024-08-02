@@ -47,7 +47,7 @@ This guide will help you use the provided Python script to fill scheduled tasks 
     ```
 
 4. **Execute the Script:**
-   - Copy the script below into a Jupyter notebook code cell or a Python file.
+   - Copy the script below into a Jupyter notebook code cell or a Python file...or run it from this repo.
 
 5. **Run the Script:**
    - Execute the script in your chosen environment (Jupyter notebook or VS Code Jupyter extension).
