@@ -29,40 +29,36 @@ This guide will help you use the provided Python script to fill scheduled tasks 
    - Or install it using **Pip manager** by pressing the plus icon and using the name.
 
 2. **Set Up Your Files:**
-   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first and third lines.
-   it should look like this inside your file:
-      ```
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\CMS Software Updates Patching Schedule.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\UMG - Syxsense Patch Calendar v380.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Scheduled Tasks.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Delivery list.xlsx
-      ```
-   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and line 3 with Scheduled tasks file, remember to close the second sheet before running the script!!!
 
-3. **Set Up Your current CMS Schedule sheet name:**
+   - Prepare your Excel sheets. Ensure that the folder path with actual downloaded tables is correctly referenced in your "file_path = r'C:/folder/path/excels'".
+
+4. **Set Up Your current CMS Schedule sheet name:**
    - Input the correct name of this month sheet name like: 
    
     ```
     workbook_name = 'May2024'
     ```
 
-4. **Execute the Script:**
-   - Copy the script below into a Jupyter notebook code cell or a Python file...or run it from this repo.
+5. **Execute the Script:**
+   
+   - Copy the repository in VS Code or simply Copy the script below into a Jupyter notebook code cell or a Python file
 
-5. **Run the Script:**
-   - Execute the script in your chosen environment (Jupyter notebook or VS Code Jupyter extension).
+7. **Run the Script:**
+
+   - Execute the script in your chosen environment (Jupyter notebook or VS Code Jupyter extension - .ipynb file extension).
    - Enter the start and end row numbers when prompted.
 
-6. **Printing on execution**
+9. **Printing on execution**
    - Script prints every collections it found.
     > None - AWS19 Web Services UAT Updated <br>
     > CHG12912112 - AWS19 PROD Updated <br>
 
-7. **Copying to the sharepoint excels:**
+10. **Copying to the sharepoint excels:**
 
-   - Press CTRL + A and CTRL + C inside updated sheet
-   - Press CTRL + A and paste with ctrl+shift+v into needed excel
+   - If you decide to merge local excels with Sharepoint(not neccessary), proceed as instructed below:
+       - Press CTRL + A and CTRL + C inside updated sheet
+       - Press CTRL + A and paste with ctrl+shift+v into needed excel
 
-8. **Errors during the script execution**
+11. **Errors during the script execution**
    - There might be None under CR number because of blank cell in CMS schedule.
    - There can be an error because of opened excel sheet which denies rewriting on top of it and needs to be closed for the scipt to update the file.
