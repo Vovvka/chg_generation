@@ -52,34 +52,28 @@ We convert from the respective time zones to our main time zone, *Europe/London*
    - Or install it using **Pip manager** by pressing the plus icon and using the name.
 
 2. **Set Up Your Files:**
-   - Prepare your Excel workbooks. Ensure the file paths are correctly referenced in your "links_file_path = 'C:/linkspath.txt'" file, with the input & output file path on the first line.
-   it should look like this inside your file:
-      ```
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\CMS Software Updates Patching Schedule.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\UMG - Syxsense Patch Calendar v380.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Scheduled Tasks.xlsx
-      C:\Users\pelyu\OneDrive\Рабочий стол\chg\excels\Delivery list.xlsx
-      ```
-   - In this current version we specify the paths to excel file under variable **links_file_path = 'C:/linkspath.txt'** inside txt file and then read it and use line 1 as the file where we choose the range of rows and also update the same file, remember to close the sheet before running the script!!!
+   
+   - Prepare your Excel sheets. Ensure that the folder path with actual downloaded tables is correctly referenced in your "file_path = r'C:/folder/path/excels'".
 
-3. **Set Up Your current CMS Schedule sheet name:**
+4. **Set Up Your current CMS Schedule sheet name:**
    - Input the correct name of this month sheet name like: 
    
     ```
-    workbook_name = 'May2024'
+    workbook_name = 'December2024'
     ```
 
-Usual error before this step is misspelling of Start Description in excel sheet, or new time zone which we didn't already specify in our zone names collection.
-
+   - Usual error before this step is misspelling of Start Description in excel sheet, or new time zone which we didn't already specify in our zone names collection.
 
 4. **Execute the Script:**
-   - Copy the script below into a Jupyter notebook code cell or a Python file.
+   
+   - Copy the repository in VS Code or simply Copy the script below into a Jupyter notebook code cell or a Python file
 
-5. **Run the Script:**
-   - Execute the script in your chosen environment (Jupyter notebook or VS Code Jupyter extension).
+6. **Run the Script:**
+   
+   - Execute the script in your chosen environment (Jupyter notebook or VS Code Jupyter extension - .ipynb file extension).
    - Enter the start and end row numbers when prompted.
 
-6. **Debugging**
+8. **Debugging**
 
 Script is printing in console every row from the range you specify from the start/end row and skips the rows which includes our counting or blanks, you can troubleshoot the errors with this output, try to verify the correct format like:
 
@@ -101,10 +95,11 @@ Script is printing in console every row from the range you specify from the star
 
 7. **Copying to the sharepoint excels:**
 
-   - Press CTRL + A and CTRL + C inside updated sheet
-   - Press CTRL + A and paste with ctrl+shift+v into needed excel
+   - If you decide to merge local excels with Sharepoint(not neccessary), proceed as instructed below:
+       - Press CTRL + A and CTRL + C inside updated sheet
+       - Press CTRL + A and paste with ctrl+shift+v into needed excel
 
-8. **Common Errors**
+9. **Common Errors**
 
    - Misspelled Start Description: Ensure the start description in the Excel sheet is spelled correctly.
    - New Time Zone: Add any new time zones to the `timezone_mapping` dictionary.
